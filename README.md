@@ -8,6 +8,26 @@ This project is the backend of a Blog Platform,
 - Completes SQL Operations for storing items.
 
 ## How to use
+Prerequisites:
+- Python 3.8+
+- Either the project's "uv" project manager (use `uv sync`) or pip for installing dependencies.
+
+1. Create a `.env` file in the project root with at least:
+```
+APP_NAME=Blog-api
+HOST=127.0.0.1
+PORT=5000
+```
+
+2. Install dependencies:
+- With uv: `uv sync`
+- Or with pip: `pip install Flask python-dotenv`
+
+3. Start the application:
+```
+python app.py
+```
+The app will create `app/Blog.db` on first run if it doesn't exist.
 
 
 
